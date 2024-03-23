@@ -1,0 +1,1035 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.lato{
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.BlackOpsOne{
+  font-family: 'Black Ops One', cursive;
+}
+.Kanit{
+  font-family: 'Kanit', sans-serif;
+}
+.headd{
+
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  flex-basis: auto;
+  padding: 10px 10px;
+
+}
+img{
+  margin-right: 1px;
+  height: 100px;
+  width: 100px;
+}
+.sybo img{
+  background-color: transparent;
+  border-radius: 50%; /* Makes it a circle */
+}
+@keyframes moveGlow {
+  0% {
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.7);
+  }
+  25% {
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.7), 0 0 50px rgba(52, 152, 219, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.7), 0 0 80px rgba(52, 152, 219, 0.3);
+  }
+  75% {
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.7), 0 0 50px rgba(52, 152, 219, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.7);
+  }
+}
+.headd{
+  background-image: url('./low-poly-grid-haikei\ \(2\).svg');
+    background-size: cover; /* or contain depending on your needs */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.logo{
+  font-family: Kanit;
+  font-size: 40px;
+  margin-left: 1px;
+  margin-right: 10px;
+  pointer-events: none;
+  margin-right: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #ffffff 0%,
+    #0646a0 29%,
+    #13ffbc 67%,
+    #00fff2 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s ease-in-out infinite;
+  display: inline-block;
+      font-size: 50px;
+  
+}
+.navigation {
+  position: relative;
+}
+
+.navigation .navigation-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff; /* Background color for the dropdown */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Box shadow for dropdown */
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+  display: none;
+}
+
+.navigation .show-links .navigation-links {
+  display: flex;
+}
+.navigation a {
+  font-family: lato;
+  color: #fff;
+  text-decoration: none;
+  font-weight: light;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 20px;
+  transition: box-shadow 0.3s, background-color 0.3s; /* Added background-color transition */
+  border-radius: 40px;
+  border: solid;
+  border-width: 2px;
+}
+a{
+  transform: scale(1.1);
+}
+.navigation a:hover {
+  box-shadow: 0 0 30px rgba(30, 213, 246, 0.5);
+  background-color: rgba(0, 255, 255, 0.53); /* Added background color change */
+  transform: scale(1.1); /* Adjusted scale value */
+  color: #6f00c9;
+}
+.navigation a:active{
+  color: #ff00ff;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+.topnav{
+  display: none;
+}
+.topnav a {
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: rgba(0, 0, 0, 0);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.snav{
+  display: none;
+}
+@media screen and (max-width: 1250px) {
+  body{
+    overflow: hidden;
+  }
+  .navigation a {
+    display: none;
+  }
+  .snav{
+    background-image: url('./low-poly-grid-haikei\ \(2\).svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .snav h2{
+    font-size: 2em!important;
+  }
+  .menu{
+    background-image: url('./low-poly-grid-haikei\ \(2\).svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 30px;
+  }
+  .headd{
+    display: none;
+  }
+  .snav h2{
+    font-size: larger;
+  }
+  .cards{
+    flex-direction: column;
+  }
+  .snav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+  }
+
+  .toggle-input {
+    display: none;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    position: relative;
+  }
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .menu a:hover {
+    background-color: #555;
+  }
+
+  .toggle-input:checked ~ .hamburger .line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .toggle-input:checked ~ .hamburger .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .toggle-input:checked ~ .hamburger .line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  .hamburger-icon {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+  }
+
+  .menu {
+    position: absolute;
+    top: calc(100% + 5px); /* adjust as needed */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    display: none;
+    z-index: 1000; /* ensure menu appears above other content */
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .menu a:hover {
+    background-color: #555;
+  }
+
+  .toggle-input:checked ~ .menu {
+    display: block;
+  }
+  .products{
+    background-image: url(./Abstract\ Paper\ \(3\).svg)!important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container{
+    width: auto!important;
+    margin-bottom: 50px!important;
+    margin: 30px!important;
+    font-size: medium!important;
+  }
+  .container p{
+    margin-top: 40px!important;
+    padding-left: 30px!important;
+    padding-right: 30px!important;    
+    padding-bottom: 50px!important;
+    color: #ffffff;
+    font-size: auto!important;
+    text-align: start!important;
+  }
+  .inner{
+    height: auto!important;
+  }
+}
+html,body{
+ 
+
+  overflow-x: hidden;
+}
+body{
+  background-color: #c79c7c;
+}
+@media screen and (max-width: 800px) {
+  .headd h2{
+    font-size:smaller;
+  }
+  .stblock img{
+    height: 60%!important;
+    width: 50%!important;
+  }
+  .stblock h2{
+    text-align: center!important;
+  }
+  .ndblock h2{
+    text-align: center!important;
+  }
+  .ndblock{
+    margin-right: 15px!important;
+  }
+  .ndblock img{
+    height: 60%!important;
+    width: 75%!important;
+  }
+  input{
+    width: 300px!important;
+  }
+  .subsub input{
+    width: 100px!important;
+  }
+  .snav h2{
+    font-size: 1.3em!important;
+  }
+  .headd{
+    padding: 0px;
+    display: none;
+  }
+  .snav{
+    background-image: url('./low-poly-grid-haikei\ \(2\).svg');
+    background-size: cover; /* or contain depending on your needs */
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .sign{
+    margin-top: 40px!important;
+    font-size: 4em!important;
+  }
+  .button-link{
+    margin-left: 50px!important;
+  }
+}
+.slider{
+  position: relative;
+	width: 100%;
+	background: #2c3e50; /* darckblue */
+  object-fit: cover;
+  overflow: hidden;
+}
+.myslide{
+	height: 560px;
+	display: none;
+	overflow:hidden;
+  object-fit: fill;
+  z-index: -1;
+}
+
+.prev, .next{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.1s;
+	user-select: none;
+}
+.prev:hover, .next:hover{
+	color: #00a7ff; /* blue */
+}
+.next{
+	right: 0;
+}
+.dotsbox{
+	position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+	z-index: 2;
+	cursor: pointer;
+  float: inline;
+}
+.dot{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+}
+/* /2 */
+
+/* javascript */
+.active, .dot:hover{
+	border-color: #00a7ff; /* blue */
+}
+/* /javascript */
+
+/* muslide add fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+/* /muslide add fade */
+
+/* 3 */
+.txt{
+	position: absolute;
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 35px;
+	top: 40%;
+	left: 15%;
+	-webkit-animation-name: posi;
+  	-webkit-animation-duration: 2s;
+  	animation-name: posi;
+  	animation-duration: 2s;
+	z-index: 1;
+}
+
+@-webkit-keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+
+@keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+.txt h1{
+	color: #00a7ff; /* blue */
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+.txt p{
+	font-weight: bold;
+	font-size: 20px;
+}
+/* /3 */
+
+/* 4 */
+.slider img{
+	transform: scale(1.5, 1.5);
+	-webkit-animation-name: zoomin;
+  	-webkit-animation-duration: 40s;
+  	animation-name: zoomin;
+  	animation-duration: 40s;
+}
+@-webkit-keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+
+
+@keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+/* /4 */
+
+
+
+/* 5 */
+@media screen and (max-width: 800px){
+	.myslide{
+		height: 500px;
+	}
+  .slider{
+    overflow: hidden;
+    height: auto;
+  }
+  .sybo img{
+    height: 50px;
+    width: 50px;
+  }
+  .menu{
+    background-image: url('./low-poly-grid-haikei\ \(2\).svg');
+    background-size: cover; /* or contain depending on your needs */
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+	.txt{
+		letter-spacing: 2px;
+		line-height: 25px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-animation-name: posi2;
+		-webkit-animation-duration: 2s;
+		animation-name: posi2;
+		animation-duration: 2s;
+	}
+
+	@-webkit-keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+
+	@keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+	.txt h1{
+		font-size: 40px;
+	}
+	.txt p{
+		font-size: 13px;
+	}
+ 
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.second{
+  height: 35rem;
+  
+}
+.products{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./Abstract\ Paper\ \(2\).svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: auto;
+  
+}
+
+.sign{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  font-weight: 100;
+  letter-spacing: 2;
+  left: 50%;
+  top: 50%;
+  font-family: lato;
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #f7f7f7;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+
+
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+.card .back h3{
+  text-align: center;
+  font-family: Kanit;
+}
+.card .front h3{
+  font-family: Kanit;
+}
+.card .back p{
+  text-align: center;
+  margin: 0!important;
+}
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+.card .front:hover{
+  box-shadow: 0 5px 10px #373543;
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0,0,0,.4);
+  text-align: center;
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: #837066;
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #373543;
+}
+
+.card .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.card .back .link a {
+  color: #f3f3f3;
+}
+
+.card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card .back p {
+  letter-spacing: 1px;
+} 
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+
+
+
+
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  background-image: url(./Icon\ Grid.svg);
+  background-size: cover; /* or contain depending on your needs */
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+}
+
+.about p{
+  text-align: center;
+}
+.back p{
+  margin-left: 45px;
+  text-align: left;
+  font-size: 20px;
+}
+.back h2{
+  padding-top: 30px;
+}
+.back h3{
+  text-align: left;
+}
+
+Kanit{
+  font-family: 'Kanit', sans-serif;
+}
+.container h2{
+  font-size: 40px;
+  font-family: Kanit;
+  padding-top: 20px;
+  color: #ffffff;  
+}
+.container p{
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: Kanit;
+  padding-bottom: 50px;
+}
+.about{
+  background-color: transparent;
+
+}
+/* This container is needed to position the front and back side */            
+
+
+
+
+.inner {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  border-radius: 40px;
+  position: relative;
+  height: auto;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+}
+
+
+/* Position the front and back side */
+
+
+/* Style the front side (fallback if image is missing) */
+.container {
+  margin-top: 90px;
+  margin-bottom: 100px;
+  width: 800px;
+  background-color: transparent;
+  font-family: Kanit;
+  font-size: larger;
+  border-radius: 40px;
+  background-color: #67359d00;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.518);
+}
+.container h1{
+  font-size: x-large;
+
+}
+/* Style the back side */
+.back {
+  text-align: center;
+  border-radius: 40px;
+  background-color: rgb(144, 147, 151);
+  color: rgb(255, 255, 255);
+  transform: rotateY(180deg);
+}
+#flipButton {
+  position: absolute;
+  z-index: 10;
+  bottom: 10px; /* Adjust the position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#flipButton:hover {
+  background-color: #0056b3;
+}
+.contact {
+  
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.stblock {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.ndblock{
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.conntact h2{
+  font-family: kanit;
+}
+.conntact{
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.stblock img{
+  border: 6px solid #5b5959;
+  display: block;
+  height: 50%;
+  width: 39%;
+  border-radius: 40px;
+  margin-bottom: 10px;
+}
+.ndblock img{
+  border: 6px solid #5b5959;
+  display: block;
+  height: 100%;
+  width: 70%;
+  border-radius: 40px;
+  margin-bottom: 10px;
+
+}
+.conn{
+  background: url(./Curve\ Line\ \(1\).svg);
+  background-size: cover; /* or contain depending on your needs */
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.anta-regular {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.stblock h2{
+  font-family: Anta;
+  color: #373543;
+  font-size: xx-large;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+
+}
+.ndblock h2{
+  font-family: Anta;
+  color: #373543;
+  font-size: xx-large;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+
+}
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.raleway-one {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.stblock h3{
+  font-family: Raleway;
+  color: #000000;
+  font-size: x-large;
+  font-weight: 500;
+  margin-bottom: 5px;
+  letter-spacing: 3px;
+}
+.ndblock h3{
+  font-family: Raleway;
+  color: #000000;
+  font-size: x-large;
+  font-weight: 500;
+  margin-bottom: 5px;
+  letter-spacing: 3px;
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #f7cdae; /* Button background color */
+  border: none;
+  color: white;
+  width: 50px; /* Set width equal to height for a perfect circle */
+  height: 50px; /* Set height equal to width for a perfect circle */
+  border-radius: 50%; /* Makes the button circular */
+  transition: box-shadow 0.3s; /* Transition effect for the shadow */
+  cursor: pointer;
+  text-align: center; /* Center the content horizontally */
+  line-height: 50px; /* Center the content vertically */
+}
+
+#btn-back-to-top:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /* Shadow glow effect on hover */
+}
+
+#btn-back-to-top svg {
+  vertical-align: middle; /* Align the SVG vertically in the center */
+}
+
+/* Optional: Adjust the size and color of the arrow icon */
+#btn-back-to-top svg path {
+  fill: white; /* Change the arrow color if needed */
+}
+
+input{
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  transition: border-color 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+input[type=text]:focus{
+  border: 2px solid #8a2020;
+  box-shadow: 2px #2c3e50;
+  box-shadow: 0 0 20px rgba(247, 205, 174, 0.5);
+}
+input[type=tel]:focus{
+  border: 2px solid #8a2020;
+  box-shadow: 2px #2c3e50;
+}
+textarea#myTextarea :focus{
+  border: 3px solid #8a2020!important;
+}
+textarea{
+  border-radius: 30px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  resize: none;
+  border: none;
+}
+.loc{
+  margin-top: 20px;
+}
+.subsub a{
+    margin-left: 100px;
+}
+.subsub input{
+  border: 3px solid;
+  border-color: #2c3e50;
+  width: 100px;
+  align-content: center;
+  padding-left: 0;
+  margin-bottom: 40px;
+  background-color: #f7cdae;
+}
+html{
+  scroll-behavior: smooth;
+}
+.button-link {
+  display: inline-block;
+  margin-left: 80px;
+  
+  color: white;
+  text-decoration: none;
+  border-radius: 50%; /* Make the button circular */
+  transition: background-color 0.3s ease;
+}
+
+.button-link svg {
+  fill: white; /* Set the color of the SVG */
+  vertical-align: middle;
+}
+
