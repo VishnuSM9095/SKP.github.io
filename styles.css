@@ -1035,4 +1035,22 @@ html{
   fill: white; /* Set the color of the SVG */
   vertical-align: middle;
 }
+.footer {
+  background-color: #ffdab9; /* Light coral background color */
+  color: #333; /* Dark text color */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -10px 20px -10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
 
+.footer p {
+  margin: 5px 0;
+}
+
+.footer p:last-child {
+  margin-bottom: 0; /* Remove bottom margin for last paragraph */
+}
+
+.footer p:last-child {
+  content: '\00A9'; /* Unicode for copyright symbol */
+}
